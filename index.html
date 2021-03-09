@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript pratice</title>
+    
+</head>
+<body>
+    <section1>
+        <h2>Kilometers to meter Convert</h2>
+<p>Type a value in the Kilometers field to convert the value to meter:</p>
+
+<p>
+  <label>Kilometer</label>
+  <input id="inputKilometers" type="number" placeholder="meter" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>meter: <span id="outputmeter"></span></p>
+    </section1>
+
+    
+    <section2>
+        <h1>Total budget Product</h1>
+        <p>
+            <label> Budget Product</label>
+            <input id="input" type="number" placeholder="Product" oninput="" onchange="(this.value)">
+        </p>
+        <p>Total cost: <span id="outputmeter"></span></p>
+            </section2>
+    
+
+    <script>
+    function LengthConverter(valNum) {
+        document.getElementById("outputmeter").innerHTML=valNum*1000;
+      }
+      
+      function budgetProduct(mobile,camera,laptop){
+        var phone=mobile*30;
+        var camera=camera*40;
+        var laptop=laptop*50;
+    var total=phone+camera+laptop;
+    return total;
+
+      }
+      var result=budgetProduct(2,4,5);
+      document.write(result);
+      
+    
+      
+      
+      
+      </script>
+</body>
+</html>
